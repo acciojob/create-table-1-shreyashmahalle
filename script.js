@@ -1,13 +1,15 @@
 function insert_Row() {
-    //Write your code here
-	const table = document.getElementById("sampleTable");
-	const newRow = table.insertRow(0);
-	const leftCell = newRow.insertCell(0);
-	const rightCell = newRow.insertCell(1);
+    // Get table element by its ID
+    let table = document.getElementById("sampleTable");
 
-	leftCell.textContent = "new Cell1";
-	rightCell.textContent = "new Cell2";
-	
-  
-  
+    // Insert a new row at the top (index 0)
+    let newRow = table.insertRow(0);
+
+    // Insert two new cells into the new row
+    let cell1 = newRow.insertCell(0);
+    let cell2 = newRow.insertCell(1);
+
+    // Add text content to each new cell
+    cell1.textContent = "New Cell1";
+    cell2.textContent = "New Cell2";
 }
